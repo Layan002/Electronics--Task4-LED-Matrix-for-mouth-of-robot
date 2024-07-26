@@ -8,7 +8,8 @@ I will make the mouth open and close while the robot speaking like this:
 
 
 
-https://github.com/user-attachments/assets/9b5c497c-5d75-4e75-8b96-5f70604d64f6
+https://github.com/user-attachments/assets/9b5c497c-5d75-4e75-8b96-5f70604d64f6 
+
 but this is the eye not the mouth, i will do it by myself.
 
 
