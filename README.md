@@ -14,7 +14,7 @@ but this is the eye not the mouth, i will do it by myself.
 
 
 # Breaking down the problem
-I will start with a simple code to understand the functionality of the led matrix using Arduino Uno and 8*8 led matrix to display numbers and characters. 
+I will start with a simple code to understand the functionality of the led matrix using WOKWI and 8*8 led matrix to display numbers and characters. 
 
 
 
