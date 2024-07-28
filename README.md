@@ -17,4 +17,26 @@ but this is the eye not the mouth, i will do it by myself.
 I will start with a simple code to understand the functionality of the led matrix using WOKWI and 8*8 led matrix to display numbers and characters. 
 
 
+# Simple example 
+
+## Code 
+
+``` CPP
+void setup() {
+
+
+}
+
+void loop(){
+
+}
+```
+
+The lc.setLed() function usually takes four parameters: <br>
+
+- The number of the device (if you have multiple devices daisy-chained).
+- The row of the LED you want to set.
+- The column of the LED you want to set.
+- A boolean value (true or false) indicating whether to turn the LED on (true) or off (false).
+
 
