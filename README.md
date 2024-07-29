@@ -1,5 +1,5 @@
 # What we need
-- Arduino nano (or uno, but I will use nano since I have not used it before).
+- Arduino Uno.
 - LED Matrix "MAX7219 LED".
 - Jumber Wires
 
