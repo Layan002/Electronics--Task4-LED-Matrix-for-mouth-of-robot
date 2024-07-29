@@ -109,25 +109,61 @@ The lc.setLed() function usually takes four parameters: <br>
 - A boolean value (true or false) indicating whether to turn the LED on (true) or off (false).
 
 
-# Troubleshooting:
+## Troubleshooting:
 - I put things at first time in left and there was a difference between DIN and DOUT, with DOUT the LED didn't turn on. <br>
 ![image](https://github.com/user-attachments/assets/b88dddd4-c937-4939-9ef2-e1a9202de28b)
 
 
+# Drawing in ONE matrix of 8*32
+
+## simulation
+![image](https://github.com/user-attachments/assets/5a16e381-7005-4098-8acb-ce8c5688f819)
 
 
 
+## Code
+
+```
+#include <LedControl.h>
+
+int DIN = 12;
+int CS= 11;
+int CLK = 10;
+int LED_MAT_NUM = 4;
+
+byte face[8][4] ={
+  {B00000000, B00000000, B00000000, B00000000},
+  {B00001111, B00000000, B01111000, B00000000},
+  {B00001111, B00000000, B01111000, B00000000},
+  {B00000000, B00000000, B00000000, B00000000},
+  {B00000000, B10000000, B10000000, B00000000},
+  {B00000000, B11111111, B10000000, B00000000},
+  {B00000000, B00000000, B00000000, B00000000},
+  {B00000000, B00000000, B00000000, B00000000}
+};
+
+LedControl lc(DIN, CLK, CS, LED_MAT_NUM);
+
+void setup() {
+
+ for (int i = 0; i < LED_MAT_NUM; i++) {
+        lc.shutdown(i, false);  // Wake up each matrix
+        lc.setIntensity(i, 8);  // Set brightness level for each matrix
+        lc.clearDisplay(i);     // Clear each matrix
+    }
+
+}
+
+void loop() {
+  for (int row = 0; row < 8; row++) {
+    for (int matrix = 0; matrix < 4; matrix++) {
+      lc.setRow(matrix, row, face[row][matrix]);
+    }
+  }
+}
+```
 
 
-
-
-
-
-
-
-
-
-byte -> is defining a sqedual of all the rows I want in the matrix to turn on, I can set it to int but byte has the range between 0-255 unlike int which has size from 0-8 bits. 
 
 
 
