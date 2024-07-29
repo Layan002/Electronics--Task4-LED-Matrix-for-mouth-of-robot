@@ -160,6 +160,13 @@ void loop() {
 }
 ```
 
+# Arduino IDE simulation: 
+
+
+
+
+
+https://github.com/user-attachments/assets/3f9d083c-c750-4a62-968b-b86c40bcf82c
 
 
 
