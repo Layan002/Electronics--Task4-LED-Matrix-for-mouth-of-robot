@@ -58,7 +58,7 @@ void loop() {
 ```
 This is the library that enable us to call the functions related to the LED MATRIX MAX72xx module that we have. <br>
 
-```
+``` CPP
 int DIN = 12;
 int CS= 11;
 int CLK = 10;
@@ -70,7 +70,7 @@ LedControl lc(DIN, CLK, CS, LED_MAT_NUM);
 Defining the variables outside like what I did here is something very helpful in any programming language. THis makes us easily change the variable faster instead of going through the code and change each line which is somethin inprofassional and headache. <br>
 
 
-```
+``` CPP
 void setup() {
 
 lc.shutdown(0, false);
@@ -85,7 +85,7 @@ lc.clearDisplay(0);
 - lc.clearDisplay(0) -> to clears the display by turning off all the LEDs. <br>
 
 
-```
+``` CPP
 }
 
 void loop() {
@@ -120,7 +120,7 @@ I used this website to draw the matrix: [Learn on fly](https://www.riyas.org/201
 
 ## Code
 
-```
+``` CPP
 #include <LedControl.h>
 
 int DIN = 12;
@@ -166,7 +166,7 @@ void loop() {
 https://github.com/user-attachments/assets/3f9d083c-c750-4a62-968b-b86c40bcf82c
 
 ## Code
-```
+``` CPP
 #include <LedControl.h>
 
 int DIN = 12;
