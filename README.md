@@ -4,13 +4,8 @@
 - Jumber Wires
 
 # What we will get at the end?
-I will make the mouth open and close while the robot speaking like this: 
+Creating a face using LED matrix "MAX7219 LED" of 8*32 type.
 
-
-
-https://github.com/user-attachments/assets/9b5c497c-5d75-4e75-8b96-5f70604d64f6 
-
-but this is the eye not the mouth, i will do it by myself.
 
 
 # Breaking down the problem
